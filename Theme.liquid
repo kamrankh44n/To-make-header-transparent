@@ -1,0 +1,15 @@
+{% if request.path == '/' or request.path == '/pages/contact' %}
+        <style>
+          .header-wrapper {
+              position: absolute;
+              background-color: transparent;
+          }
+        </style>
+{% else %}
+         <style>
+            .header-wrapper {
+                position: relative !important;
+                background: var(--gradient-background) !important;
+            }
+        </style>
+{% endif %}
